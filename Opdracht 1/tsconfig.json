@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "diagnostics": true,
+        "target": "ES5",
+        "sourceMap": true,
+        "esModuleInterop": true,
+    }
+}
