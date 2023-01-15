@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+#root {
+    font-family: 'Lato', sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+
+    min-height: 100vh;
+
+    color-scheme: light dark;
+    color: #eeeeee;
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p, b, a {
+    font-size: 1.6rem;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #242424;
+        background-color: #eeeeee;
+    }
+
+    a:visited, a:hover, a:active {
+        color: #242424;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    p, b, a {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    p, b, a {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}

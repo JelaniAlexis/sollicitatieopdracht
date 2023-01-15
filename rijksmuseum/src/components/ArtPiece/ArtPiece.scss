@@ -1,0 +1,73 @@
+@keyframes fade-slide {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    } to {
+        opacity: 100%;
+        transform: translateX(0%);
+    }
+}
+
+.artPiece {
+    height: 20rem;
+    width: 80%;
+    background-color: #503333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    animation: fade 1.2s ease-out;
+    border-radius: 2rem;
+    
+    &__img {
+        object-fit: contain;
+        max-height: 80%;
+        max-width: 80%;
+            
+        &Container {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+        }
+    }
+
+    &__description {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background: #000;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .artPiece__description {
+        background: #eeeeee;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .artPiece{
+        width: 100%;
+        &__img {
+            &Container {
+                width: 50%;
+            }
+        }
+        &__description {
+            width: 50%;
+        }
+    }
+}

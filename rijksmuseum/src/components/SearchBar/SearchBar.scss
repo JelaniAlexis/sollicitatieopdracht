@@ -1,0 +1,42 @@
+.searchBar {
+    height: 2.5rem;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    &__input {
+        background: #000;
+        width: 85%;
+        height: 100%;
+        font-size: 1.5rem;
+        background: none;
+        border: 0.1rem solid #eee;
+        border-radius: 1rem;
+        padding: 1rem;
+        outline: none;
+    }
+    &__submit {
+        cursor: pointer;
+        width: 15%;
+        height: 100%;
+        font-size: 1.5rem;
+        border: 0.1rem solid #eee;
+        border-radius: 1rem;
+        background: none;
+        color: #eee;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .searchBar {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .searchBar {
+        width: 50%;
+    }
+}
